@@ -5,9 +5,9 @@ import views.html.index;
 
 /**
  * This controller contains an action to handle HTTP requests
- * to the application's hello page.
+ * to the application's home page.
  */
-public class Application extends Controller {
+public class HomeController extends Controller {
 
     /**
      * An action that renders an HTML page with a welcome message.
@@ -16,5 +16,5 @@ public class Application extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
 
-    public Result hello(String name) { return ok(views.html.hello.render("Hello " + name));}
+    public Result index() {return ok(index.render());}
 }
